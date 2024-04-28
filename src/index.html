@@ -24,3 +24,31 @@
 </body>
 
 </html>
+<script>
+  function calcular() {
+    var altura = (document.getElementById("altura").value)/100;
+    var peso = document.getElementById("peso").value;
+
+    console.log(altura)
+    console.log(peso)
+
+    var IMC = peso / (altura * altura);
+    console.log(IMC)
+    if (IMC<18.5){
+      window.alert("Classificação: Magreza")
+    }
+    else if (IMC<24.9){
+      window.alert("Classificação: Normal")
+    }
+    else if (IMC<29.9){
+      window.alert("Classificação: Sobrepeso")
+    }
+    else if (IMC<39.9){
+      window.alert("Classificação: Obesidade")
+    }
+    else if (IMC>40.0){
+      window.alert("Classificação: Obesidade grave")
+    }
+  }
+</script>
+
